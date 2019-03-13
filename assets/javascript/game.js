@@ -1,6 +1,12 @@
-// app randomly picks random letter
+// wins = 0
+// loses = 0
+// guesses left = 9
+// characters available
+// characters guessed
 
-// user strikes key: userChoice
+
+// app randomly picks random letter
+// user keys character
 
 //if appChoice = userChoice: win, 
 //increase wins, 
