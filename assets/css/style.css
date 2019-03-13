@@ -1,0 +1,17 @@
+h1 {
+    background-color: darkslategray;
+    padding: 20px;
+    text-align: center;
+    color: antiquewhite;
+}
+body {
+    background-color: antiquewhite;
+}
+.container {
+    text-align: center;
+    background-color: darkkhaki;
+}
+img {
+    margin: 0 0 20px 0;
+    width: 100%;
+}

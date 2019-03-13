@@ -22,30 +22,27 @@ function psychic () {
   appChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
   console.log("psychic thinks of = " + appChoice);
 }
-alert ("Try to guess what letter the psychic is thinking!");
 psychic ();
 
 // user keys character
 
 document.onkeyup = function(event) {
   userChoice = event.key.toLowerCase();
-  console.log(userChoice);
+  console.log("user guesses = " + userChoice);
 
   //if appChoice = userChoice: win, 
   //increase wins, 
-  if (!/[a-z]/.test(userChoice)){
-		alert ("please choose a letter");
-  } else if (userChoice === "meta") {
-    alert ("Try to guess what letter the psychic is thinking!");
+  if (!/[a-z]/.test(userChoice) || userChoice === "meta" || userChoice === "shift" || userChoice === "enter" || userChoice === "arrowright" || userChoice === "arrowleft" || userChoice === "arrowup" || userChoice === "arrowdown" || userChoice === "backspace" || userChoice === "alt" || userChoice === "control" || userChoice === "escape") {
+    alert ("Please choose a character a though z.");
   } else if (appChoice === userChoice) {
-    alert("Correct! You are such a good guesser");
+    alert("Correct! You are such a good guesser. The psychic was thinking of the letter " + appChoice);
     win++;
     //restart
     psychic ();
   } else if (guessesLeft === 1) {
     //else: lose, 
     guessesLeft--;
-    alert("You lose! Try again.");
+    alert("You lose! The psychic was thinking of the letter " + appChoice + ". Please try again.");
     lose++;
     //restart game
     psychic();

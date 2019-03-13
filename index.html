@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/javascript/game.js"></script>
     <title>The Psychic Game</title>
+
 </head>
+
 <body>
-    
     <h1>The Psychic Game</h1>
-    <p>Guess what letter I'm thinking of</p>
-    <p id ="win">Wins : 0</p>
-    <p id ="lose">Losses : 0</p>
-    <p id ="guessesLeft">Guesses left : 9</p>
-    <p id = "guesses">Your guesses so far : </p>
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2>~ Try to guess what letter the psychic is thinking... ~</h2>
+                <img src="./assets/images/psychic.jpg" alt="psychic"><br>
+                <p id="win">Wins : 0</p>
+                <p id="lose">Losses : 0</p>
+                <p id="guessesLeft">Guesses left : 9</p>
+                <p id="guesses">Your guesses so far : </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
 </body>
+
 </html>
